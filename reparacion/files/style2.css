@@ -1,0 +1,342 @@
+/* ---- ESTILOS DEL HEADER ---- */
+.header {
+    background: #003366;
+    color: white;
+    padding: 15px 20px;
+}
+
+/* Contenedor principal del encabezado */
+.header_principal {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* ---- LOGO Y TITULO ---- */
+.logo_encabezado {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.img_logo {
+    height: 80px; /* Tamaño adecuado */
+}
+
+.logo_titulo {
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+/* ---- MENÚ DE NAVEGACIÓN ---- */
+.nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 15px; /* Espaciado entre los elementos */
+}
+
+.nav ul li {
+    display: inline;
+}
+
+.nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    transition: color 0.3s ease-in-out;
+}
+
+.nav ul li a:hover {
+    color: #ffba08;
+}
+
+/* ---- ESTILOS PARA LA SECCIÓN DE SUGERENCIAS ---- */
+.sugerencias-header {
+    background: url('/reparacion/imagenes/cuidado.jpg') no-repeat center center/cover;
+    color: white;
+    text-align: center;
+    padding: 60px 20px;
+    position: relative;
+}
+
+.sugerencias-header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Capa oscura para mejorar lectura */
+}
+
+.sugerencias-contenido {
+    position: relative;
+    z-index: 1;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* ---- ESTILOS PARA EL DETAILS ---- */
+.sugerencias-detalles {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 15px;
+    border-radius: 8px;
+    margin-top: 20px;
+    text-align: left;
+}
+
+.sugerencias-detalles summary {
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 10px;
+    background: #ff6f00;
+    color: white;
+    border-radius: 5px;
+    display: inline-block;
+    transition: background 0.3s;
+}
+
+.sugerencias-detalles summary:hover {
+    background: #ffba08;
+}
+
+.sugerencias-detalles ul {
+    list-style: none;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.sugerencias-detalles li {
+    font-size: 1rem;
+    padding: 5px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.sugerencias-detalles li:last-child {
+    border-bottom: none;
+}
+
+
+
+
+
+
+
+/* ---- ESTILO PARA LA INTRODUCCIÓN ---- */
+.cuidados-introduccion {
+    background: url('/reparacion/imagenes/mantenimiento.jpg') no-repeat center center/cover;
+    color: white;
+    text-align: center;
+    padding: 60px 20px;
+    position: relative;
+}
+
+.cuidados-introduccion::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6); /* Oscurecer fondo para mejor legibilidad */
+}
+
+.contenido {
+    position: relative;
+    z-index: 1;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ---- ESTILO PARA SECCIÓN DE CUIDADOS ---- */
+.cuidados {
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.electrodomestico {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background: #f5f5f5;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+
+.electrodomestico img {
+    width: 250px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.info {
+    flex: 1;
+}
+
+.info h3 {
+    color: #ff6f00;
+}
+
+.info ul {
+    list-style: none;
+    padding: 0;
+}
+
+.info li {
+    padding: 5px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.info li:last-child {
+    border-bottom: none;
+}
+
+/* ---- ESTILO PARA EL FOOTER ---- */
+.footer {
+    background: #222;
+    color: #fff;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.footer-contenedor {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.footer-info, .footer-contacto, .footer-redes {
+    flex: 1;
+    min-width: 250px;
+    margin: 10px;
+}
+
+.footer h3, .footer h4 {
+    color: #ff6f00;
+}
+
+.footer-contacto ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-contacto li {
+    margin: 5px 0;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.footer-contacto i {
+    color: #ff6f00;
+}
+
+.redes-icons a {
+    color: #fff;
+    font-size: 24px;
+    margin: 0 10px;
+    transition: 0.3s;
+}
+
+.redes-icons a:hover {
+    color: #ff6f00;
+}
+
+.footer-copy {
+    margin-top: 20px;
+    font-size: 14px;
+    border-top: 1px solid #444;
+    padding-top: 10px;
+}
+
+
+/* ---- RESPONSIVE DESIGN ---- */
+@media (max-width: 768px) {
+    .header_principal {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .introduccion h1 {
+        font-size: 2rem;
+    }
+
+    .introduccion p {
+        font-size: 16px;
+    }
+
+    .img_logo {
+        height: 60px;
+    }
+
+    .sugerencias-header, .cuidados-introduccion {
+        padding: 40px 20px;
+    }
+
+    .electrodomestico {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .electrodomestico img {
+        width: 80%;
+    }
+}
+
+@media (max-width: 480px) {
+    .header {
+        padding: 10px;
+    }
+
+    .logo_titulo {
+        font-size: 18px;
+    }
+
+    .nav ul {
+        gap: 10px;
+    }
+
+    .introduccion h1 {
+        font-size: 1.8rem;
+    }
+
+    .introduccion p {
+        font-size: 14px;
+    }
+
+    .btn-servicio {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+
+    .footer-contenedor {
+        flex-direction: column;
+        text-align: center;
+    }
+}

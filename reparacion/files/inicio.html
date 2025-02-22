@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Servicio de reparación de neveras, lavadoras, estufas y más en Bogotá. Atención rápida y garantizada. ¡Agenda tu servicio ahora!">    
+    <title>Reparación de Electrodomésticos en Bogotá | Servicio Técnico Garantizado</title>
+    <link rel="stylesheet" href="style.css">  
+    <link rel="shortcut icon" href="/reparacion/svg/favicon.png" type="image/x-icon"> 
+</head>
+<body>
+    <header class="header">
+        <div class="header_principal">
+            <div class="logo_encabezado">
+                <img class="img_logo" src="/reparacion/svg/repair_logo.png" alt="Logo Reparación">
+                <span class="logo_titulo">Expertos en reparación de electrodomésticos</span>
+            </div>
+            <nav class="nav">
+                <ul>
+                    <li><a href="inicio.html">Inicio</a></li>
+                    <li><a href="sujerencias_de_cuidado.html">Sugerencias de Cuidado</a></li>
+                    <li><a href="tipos_de_mantenimientos.html">Tipos de Mantenimiento</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="introduccion">
+            <h1>Servicio Técnico de Electrodomésticos en Bogotá</h1>
+            <p>Especialistas en reparación y mantenimiento de neveras, lavadoras, calentadores, aires acondicionados y estufas. Diagnóstico profesional y soluciones garantizadas para prolongar la vida útil de tus electrodomésticos.</p>
+            <a href="formulario.html" class="btn-servicio">Solicitar Servicio</a>
+        </div>
+    </header>
+    
+    <script src="index.js" ></script>
+    <main class="principal">
+        <section class="que_reparamos">
+            <h3 class="titulo_reparacion">¿Qué reparamos?</h3>
+            <div class="slider">
+                <button class="prev" onclick="moverSlider(-1)" id="btn-prev">&#10094;</button>
+                <div class="slider-container">
+                    <div class="slider-track">
+                        <div class="slide">
+                            <div class="img-container">
+                                <img src="/reparacion/imagenes/lavadora.jpg" alt="Lavadora">
+                                <div class="descripcion">
+                                    <p>Reparación de lavadoras de todas las marcas y modelos. Solucionamos 
+                                    <br>problemas como fugas de agua, fallos en el motor y errores de programación.</p>
+                                </div>
+                            </div>
+                            <h4>Lavadoras</h4>
+                        </div>
+                        <div class="slide">
+                            <div class="img-container">
+                                <img src="/reparacion/imagenes/estufa.jpg" alt="Estufa">
+                                <div class="descripcion">
+                                    <p>Solucionamos problemas de encendido, fugas, fallos <br> en los quemadores y termostatos defectuosos en estufas a gas y eléctricas.</p>
+                                </div>
+                            </div>
+                            <h4>Estufas</h4>
+                        </div>
+                        <div class="slide">
+                            <div class="img-container">
+                                <img src="/reparacion/imagenes/nevera.jpg" alt="Nevera">
+                                <div class="descripcion">
+                                    <p>Reparamos neveras con falta de enfriamiento, fugas de gas refrigerante <br> y fallos  en el termostato para un mejor rendimiento.</p>
+                                </div>
+                            </div>
+                            <h4>Neveras</h4>
+                        </div>
+                        <div class="slide">
+                            <div class="img-container">
+                                <img src="/reparacion/imagenes/calentador.png" alt="Calentador">
+                                <div class="descripcion">
+                                    <p>Reparación de calentadores a gas y eléctricos. Solucionamos problemas de encendido, fugas de gas y fallos en el sistema de calentamiento.</p>
+                                </div>
+                            </div>
+                            <h4>Calentadores</h4>
+                        </div>
+                        <div class="slide">
+                            <div class="img-container">
+                                <img src="/reparacion/imagenes/aireAcondicionado.jpg" alt="Aire acondicionado">
+                                <div class="descripcion">
+                                    <p>Mantenimiento y reparación de aires acondicionados, solucionando problemas <br> como falta de refrigeración, ruidos extraños y fugas de gas.</p>
+                                </div>
+                            </div>
+                            <h4>Aires Acondicionados</h4>
+                        </div>
+                    </div>
+                </div>
+                <button class="next" onclick="moverSlider(1)" id="btn-next">&#10095;</button>
+            </div>
+
+            <a href="inicio.html"><button class="btn-volver" onclick="volverAtras()">&#8592; Volver</button></a>
+        </section>
+        <section class="marcas">
+            <h2 class="titulo-marcas">Trabajamos con las mejores marcas</h2>
+            <div class="marcas-container">
+                <div class="marcas-slider">
+                    <img src="/reparacion/marcas/bosh.png" alt="Bosch">
+                    <img src="/reparacion/marcas/electrolux.png" alt="Electrolux">
+                    <img src="/reparacion/marcas/haceb.jpg" alt="Haceb">
+                    <img src="/reparacion/marcas/lg.png" alt="LG">
+                    <img src="/reparacion/marcas/mabe.png" alt="Mabe">
+                    <img src="/reparacion/marcas/panasonic.png" alt="Panasonic">
+                    <img src="/reparacion/marcas/sansung.png" alt="Samsung">
+                    <img src="/reparacion/marcas/whirlpool.png" alt="Whirlpool">
+        
+                    <!-- Se duplican los logos para dar la sensación de continuidad -->
+                    <img src="/reparacion/marcas/bosh.png" alt="Bosch">
+                    <img src="/reparacion/marcas/electrolux.png" alt="Electrolux">
+                    <img src="/reparacion/marcas/haceb.jpg" alt="Haceb">
+                    <img src="/reparacion/marcas/lg.png" alt="LG">
+                    <img src="/reparacion/marcas/mabe.png" alt="Mabe">
+                    <img src="/reparacion/marcas/panasonic.png" alt="Panasonic">
+                    <img src="/reparacion/marcas/sansung.png" alt="Samsung">
+                    <img src="/reparacion/marcas/whirlpool.png" alt="Whirlpool">
+                </div>
+            </div>
+        </section>          
+    </main>
+    <footer class="footer">
+        <div class="footer-contenedor">
+            <div class="footer-info">
+                <h3>Servicio Técnico Express</h3>
+                <p>Reparación rápida y garantizada de neveras, lavadoras, calentadores, aires acondicionados y estufas.</p>
+            </div>
+            <div class="footer-contacto">
+                <h4>Contáctanos</h4>
+                <ul>
+                    <li><i class="fas fa-phone"></i> +57 320 456 7890</li>
+                    <li><i class="fas fa-envelope"></i> contacto@serviciotecnico.com</li>
+                    <li><i class="fas fa-map-marker-alt"></i> Bogotá, Colombia</li>
+                </ul>
+            </div>
+            <div class="footer-redes">
+                <h4>Síguenos</h4>
+                <div class="redes-icons">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copy">
+            <p>&copy; 2025 Servicio Técnico Express - Todos los derechos reservados</p>
+        </div>
+    </footer>
+    
+</body>
+</html>
